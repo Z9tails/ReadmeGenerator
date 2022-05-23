@@ -59,7 +59,7 @@ ${renderLicenselink(data.license)}
 ## Contact 
 
 * Github: [GitHub Profile](https://github.com/${data.github})
-* LinkedIn: [LinkedIn](${data.linkedIn})
+* LinkedIn: [linkedIn](${data.linkedIn})
 * e-mail: [e-mail](mailto:${data.email})
  
 `;

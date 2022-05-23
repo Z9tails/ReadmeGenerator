@@ -47,7 +47,7 @@ inquirer.prompt ([{
       message: "Any questions that need addressed?",
     },
     {
-      type: "list",
+      type: "checkbox",
       name: "license",
       message: "What License does your project contain?",
       choices: ["Apache 2.0", "MIT", "Mozilla", "Unlicense", "None"]
