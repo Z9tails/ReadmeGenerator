@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //generateMarkdown filepath
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown').default;
 
 //Questions to be asked
 inquirer.prompt = ([{
