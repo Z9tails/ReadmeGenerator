@@ -16,27 +16,25 @@ function renderLicenselink(license) {
   } else if (license === "Unlicense") {
 
     return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-brightgreen.svg)](http://unlicense.org/)`
-
-  } else if (license === "None") {
-    return `[Operating Rogue]`
   }
 
 }
 
 
-function generateMarkdown(data) {
-  let licenseLink = renderLicenselink(data.license)
-//Table of Contents
+
+https: function generateMarkdown(data) {
+  //let licenseLink = renderLicenselink(data.license);
+  //Table of Contents
   return `# ${data.title}
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contribution Guidelines](#contribution)
+  - [Contribution](#contribution)
   - [Testing](#testing)
   - [Questions](#questions)
-  - [License(s)](#license)
+  - [License](#license)
   - [Contact](#contact)
 
 ## Description
@@ -47,7 +45,7 @@ ${data.installation}
 
 ## Usage
 ${data.usage}
-## Contribution Guidelines
+## Contribution
 ${data.contribution}
 ## Testing
 ${data.testing}
@@ -55,16 +53,16 @@ ${data.testing}
 ## Questions
 ${data.questions}
 
-## License(s) 
-${data.license}
+## License 
+${renderLicenselink(data.license)}
 
 ## Contact 
 
 * Github: [GitHub Profile](https://github.com/${data.github})
-* LinkedIn: ${data.linkedIn}
-* e-mail: ${data.email}
+* LinkedIn: [LinkedIn](${data.linkedIn})
+* e-mail: [e-mail](mailto:${data.email})
  
-`
+`;
 }
 
 module.exports = generateMarkdown;

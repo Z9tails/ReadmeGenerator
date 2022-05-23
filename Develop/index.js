@@ -49,7 +49,7 @@ inquirer.prompt ([{
     {
       type: "list",
       name: "license",
-      message: "What License(s) does your project contain?",
+      message: "What License does your project contain?",
       choices: ["Apache 2.0", "MIT", "Mozilla", "Unlicense", "None"]
     },
     {
@@ -73,7 +73,7 @@ inquirer.prompt ([{
   //End of Questions
   //Function for generating file 
   .then((response) => {
-      fs.writeFile('README.md', generateMarkdown(response), err => {
+      fs.writeFile(`${response.title}.md`, generateMarkdown(response), err => {
           if (err) throw err;
         });
        }

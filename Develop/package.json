@@ -1,14 +1,16 @@
 {
-  "name": "readme",
-  "version": "1.0.0",
-  "description": "CLI readme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mark",
-  "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "name": "develop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
