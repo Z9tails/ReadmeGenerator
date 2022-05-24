@@ -19,15 +19,14 @@ function renderLicenselink(license) {
   } else if (license === "None") {
     return `Going Free`
   }
-    
+
 
 }
 
 
 
 https: function generateMarkdown(data) {
-   let licenseLink = renderLicenselink(data.license);
-  //Table of Contents
+//Table of Contents
   return `# ${data.title}
 
   ## Table of Contents
